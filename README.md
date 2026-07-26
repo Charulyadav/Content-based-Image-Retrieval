@@ -1,13 +1,7 @@
-==========================================================================
 CS 5330 - Project 2: Content-Based Image Retrieval
-==========================================================================
+NAME: Charul
 
-NAME
-     Charul
-
-==========================================================================
 DEVELOPMENT SETUP
-==========================================================================
 
 Operating System:   Windows
 IDE:                Visual Studio Code
@@ -16,9 +10,7 @@ Build System:       CMake
 OpenCV:             4.x (prebuilt for Windows, vc16)
 C++ Standard:       C++17
 
-==========================================================================
 EXECUTABLES BUILT
-==========================================================================
 
 After building, bin/Debug/ contains two executables:
 
@@ -28,9 +20,7 @@ After building, bin/Debug/ contains two executables:
     matchImage.exe       - given a target image and a feature CSV, ranks
                            database images by distance and prints top N.
 
-==========================================================================
 BUILD INSTRUCTIONS
-==========================================================================
 
 1. Open the project2 folder in VS Code.
 2. Open the Command Palette (Ctrl+Shift+P).
@@ -40,9 +30,7 @@ BUILD INSTRUCTIONS
 5. Copy OpenCV debug DLLs into bin/Debug if not already there:
        copy C:\Users\Charul\Downloads\opencv\build\x64\vc16\bin\opencv_world*d.dll bin\Debug\
 
-==========================================================================
 RUNNING THE EXECUTABLES
-==========================================================================
 
 Step 1: Compute features for the database.
 
@@ -89,9 +77,7 @@ Step 2: Run a query.
 
     Task 7:  .\bin\Debug\matchImage.exe data\olympus\pic.0746.jpg custom custom_dist data\features_custom.csv 5 data\ResNet18_olym.csv
 
-==========================================================================
 NOTES
-==========================================================================
 
 - All feature CSVs are precomputed once and reused across queries.
 - The image database (data/olympus) and the ResNet18 embeddings CSV
@@ -101,5 +87,3 @@ NOTES
   the first result. The next 3 are the actual top matches, which
   match the prof's reference list exactly.
 - Built and tested in Debug mode.
-
-==========================================================================
